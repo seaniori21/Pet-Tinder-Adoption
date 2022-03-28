@@ -28,17 +28,9 @@ An app that allows users to adopt animals through a Tinder-like interface
     
 ## Product Spec
 
-### 1. User Stories (Required and Optional)
-
-**Required Must-have Stories**
-
-* 
-
-**Optional Nice-to-have Stories**
-
-* 
-* ...
-
+### 1. Features / What our app does
+*
+*
 ### 2. Screen Archetypes
 
 * [list first screen here]
