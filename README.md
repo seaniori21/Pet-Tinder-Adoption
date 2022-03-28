@@ -66,5 +66,5 @@ An app that allows users to adopt animals through a Tinder-like interface
    * ...
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+
+<img src="AppWireFrame.png" width=600>
