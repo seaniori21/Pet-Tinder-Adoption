@@ -54,32 +54,8 @@ public class LoginActivity extends AppCompatActivity {
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.i(TAG, "onClick Sign up button");
-                String username = etUsername.getText().toString();
-                String password = etPassword.getText().toString();
-                signUpUser(username,password);
-            }
-        });
-    }
-
-    private void signUpUser(String username, String password) {
-        Log.i(TAG,"Creating user: " + username);
-        ParseUser user = new ParseUser();
-        user.setUsername(username);
-        user.setPassword(password);
-
-        user.signUpInBackground(new SignUpCallback() {
-            @Override
-            public void done(com.parse.ParseException e) {
-                if (e == null) {
-                    // Sign up successful
-                    goMainActivity();
-                    Toast.makeText(LoginActivity.this, "Sign up success", Toast.LENGTH_SHORT).show();
-                }
-                else {
-                    Log.e(TAG, "Sign up error", e);
-                    Toast.makeText(LoginActivity.this, "Sign up error", Toast.LENGTH_SHORT).show();
-                }
+                Log.i(TAG, "Clicked The button CreateNewUser");
+                goCreateNewUserActivity();//sends you to CreateNewUser.xml
             }
         });
     }
@@ -90,7 +66,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void done(ParseUser user, com.parse.ParseException e) {
                 if (e != null) {
-                    Log.e(TAG, "Issue with loging in", e);
+                    Log.e(TAG, "Issue with logging in", e);
                     Toast.makeText(LoginActivity.this, "issue with logging in!", Toast.LENGTH_SHORT).show();
                     return;
                 }
@@ -103,6 +79,12 @@ public class LoginActivity extends AppCompatActivity {
 
     private void goMainActivity() {
         Intent i = new Intent(this, MainActivity.class);
+        startActivity(i);
+        finish();
+    }
+
+    private void goCreateNewUserActivity(){
+        Intent i = new Intent(this, CreateNewUserActivity.class);
         startActivity(i);
         finish();
     }

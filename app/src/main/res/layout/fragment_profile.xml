@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/etDescription"-->
+    <!--        android:layout_width="407dp"-->
+    <!--        android:layout_height="109dp"-->
+    <!--        android:layout_alignParentStart="true"-->
+    <!--        android:layout_alignParentEnd="true"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_marginStart="0dp"-->
+    <!--        android:layout_marginEnd="4dp"-->
+    <!--        android:layout_marginBottom="283dp"-->
+    <!--        android:ems="10"-->
+    <!--        android:hint="Description"-->
+    <!--        android:inputType="textPersonName"-->
+    <!--        android:minHeight="48dp" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btnTakePic"-->
+    <!--        android:layout_width="220dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentStart="true"-->
+    <!--        android:layout_alignParentTop="true"-->
+    <!--        android:layout_alignParentEnd="true"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginStart="97dp"-->
+    <!--        android:layout_marginTop="209dp"-->
+    <!--        android:layout_marginEnd="94dp"-->
+    <!--        android:text="Take Picture" />-->
+
+    <ImageView
+        android:id="@+id/pfpUserImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/pfpUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/pfpUserImage"
+        android:text="TextView"
+        android:textSize="24sp"
+        tools:text="SEAN UMALI" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="215dp"
+        android:layout_marginTop="310dp"
+        android:text="LOGOUT" />
+
+
+</RelativeLayout>
