@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
@@ -34,12 +35,14 @@ import okhttp3.Headers;
 public class HomeFragment extends Fragment {
 
     public static final String GET_PETS = "https://api.petfinder.com/v2/animals";
-    public static final String TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJ1NkFmQmJGWTZIdnJYR29HWkZHbjB2T3BHdmluckx3SzN3WWZSbFBGelpudTdsZFJPMCIsImp0aSI6ImQyZmNiNmFlOWZjN2RhMjhkNDgyYjA4ZmZjYTZiNjdiMzdkNzc3MzhiODAxYzAxZTNlNjFhYTA0YmZlMTQ5YWFhM2RjM2E2ODBkM2U5ZGE1IiwiaWF0IjoxNjUxNjg3NDcyLCJuYmYiOjE2NTE2ODc0NzIsImV4cCI6MTY1MTY5MTA3Miwic3ViIjoiIiwic2NvcGVzIjpbXX0.Rrv0SjL5rQlungfXcYqxfaMJQnChbweLJcXrECu0lnqncJ5R-7nfzuD1rNCTrEjX8uQZKXRbyWkpmTorBbzJLSCRQYKGKxvlO5zhaWStgzw_YfTmrEspdWC5Z-GHTuVfQ0cfKrbIclIb8WXtfKm_09Aqmfpt5m5BT9nae_Z5yBmLWPIDOf2C3qGdvHzHA0TjfRMR2EljnilEskldrn7_Sm2tLRGehSC2x4NJiBT3bGezaBKph6nrK3MGOmDCnHJsDT5R3aACMORHAdzwgPBwXq0im4ClBBmhzCzi73ChBURa39Higewsr6aOa_ZUvpiiSuXTkOfJKFDrci5iWMoVRw";
+    public static final String TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJ1NkFmQmJGWTZIdnJYR29HWkZHbjB2T3BHdmluckx3SzN3WWZSbFBGelpudTdsZFJPMCIsImp0aSI6ImM1ZjIzNTdhYzJlNThjNDQ0OWYwMjhiNTEyZGRmNWU3OTE1OWIzZWI4ZWY4M2ZmYjJjMjdjNWVkZGM3MDVhMWUxZTNkNjZmMWE4ODAyY2E0IiwiaWF0IjoxNjUxNzA2MDM1LCJuYmYiOjE2NTE3MDYwMzUsImV4cCI6MTY1MTcwOTYzNSwic3ViIjoiIiwic2NvcGVzIjpbXX0.vyQKmcK4eOXSJkcFdlM5rtX8BQngMjOhdvrVI4uuvR7Nf6PbEuKxjL1NFjGuV--nTv6CjPPZoG577eo5v89_ylmIEhjwH-DacnSkS1SKn5vdDEQioG8Wgu6YQunjts8hQD0gI7PoHxu2Y8HlE57r_ekPdvSevG-UoxcPUxBmFts0W1TSoKARYTZU4TfDee4mhrkLVdQNVZFYLYfIMpnWQ6-Sfn0U8EGnv3NAHvfgbo0whfmT6Q5leDu0zacdAi72ixUuZROMSTbOmCO3kZHX5Kz8yr3E2AfxwanFO1jjxqYR_mU5gFv86044QAcqPWT_S6J7Y6bkZPieOxPnnyAb_Q";
     public static final String TAG = "HomeFragment";
     private RecyclerView rvMatch;
     List<Profile> profiles;
     protected ProfileAdapter profileAdapter;
-
+    private ArrayList<String> al;
+    private ArrayAdapter<String> arrayAdapter;
+    private int i;
 
 
     @Override
@@ -54,6 +57,9 @@ public class HomeFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         rvMatch = view.findViewById(R.id.rvMatch);
+
+        // card stack attempt:
+        al = new ArrayList<>();
 
 
 
