@@ -1,62 +1,166 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="720dp"
-    android:paddingTop="3dp">
-
-    <TextView
-        android:id="@+id/tvName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="20dp"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:textSize="34sp"
-        tools:text="CUTE DOGGY" />
-
-    <!--<TextView
-        android:id="@+id/tvGender"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="20dp"
-        android:textSize="20sp"
-        tools:text="Gender" />&ndash;&gt;-->
-
-
-    <ImageView
-        android:id="@+id/ivPhoto"
+    android:layout_height="550dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="50dp"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:orientation="vertical"
+        android:background="@color/white"
         android:layout_width="match_parent"
-        android:layout_height="600dp"
-        android:layout_below="@+id/tvName"
-        android:layout_marginTop="0dp"
-        android:layout_marginBottom="0dp"
-        android:scaleType="centerCrop"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="7dp">
 
-    <TextView
-        android:id="@+id/tvDescription"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/ivPhoto"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="40dp"
-        android:text="Description..."
-        android:textSize="16sp"
-        tools:layout_marginBottom="10dp" />
+        <ImageView
+            android:id="@+id/ivPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="479dp"
+            android:layout_below="@+id/tvName"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp"
+            tools:srcCompat="@tools:sample/avatars" />
+<!--            android:layout_height="479dp"-->
+<!--            android:layout_marginTop="0dp"-->
+<!--            android:layout_marginBottom="0dp"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            tools:srcCompat="@tools:sample/avatars" />-->
 
-    <!--<TextView
-        android:id="@+id/tvId"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tvDescription"
-        android:layout_marginTop="30dp"
-        android:text="ID" />-->
 
-</RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:gravity="center|left|bottom"
+            android:orientation="vertical"
+            android:paddingLeft="20dp">
+
+            <!--<TextView
+                android:id="@+id/tvGender"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:textSize="20sp"
+                tools:text="Gender" />&ndash;&gt;-->
+
+
+            <!-- android:layout_alignParentStart="true"-->
+            <!--                android:layout_alignParentEnd="true"-->
+            <!--                android:layout_marginStart="10dp"-->
+            <!--                android:layout_marginEnd="20dp"-->
+            <!--                android:textSize="34sp"-->
+            <!--                tools:text="CUTE DOGGY" />-->
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/ivPhoto"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:layout_below="@+id/tvName"-->
+            <!--                android:layout_marginTop="0dp"-->
+            <!--                android:layout_marginBottom="0dp"-->
+            <!--                android:scaleType="centerCrop"-->
+            <!--                tools:srcCompat="@tools:sample/avatars" />-->
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                tools:text="CUTE DOGGY" />
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description..."
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:textStyle="normal" />
+            <!--                android:layout_below="@+id/ivPhoto"-->
+            <!--                android:textColor="@color/black"-->
+            <!--                android:textSize="20dp"-->
+            <!--                android:textStyle="bold"-->
+            <!--                android:text="Description..."/>-->
+
+            <!--<TextView
+                android:id="@+id/tvId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDescription"
+                android:layout_marginTop="30dp"
+                android:text="ID" />-->
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>
+
+
+
+
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="720dp"-->
+<!--    android:paddingTop="3dp">-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvName"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:fontFamily="sans-serif-condensed-medium"-->
+<!--        android:textSize="34sp"-->
+<!--        tools:text="CUTE DOGGY" />-->
+
+<!--    &lt;!&ndash;<TextView-->
+<!--        android:id="@+id/tvGender"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:textSize="20sp"-->
+<!--        tools:text="Gender" />&ndash;&gt;&ndash;&gt;-->
+
+
+<!--    <ImageView-->
+<!--        android:id="@+id/ivPhoto"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="600dp"-->
+<!--        android:layout_below="@+id/tvName"-->
+<!--        android:layout_marginTop="0dp"-->
+<!--        android:layout_marginBottom="0dp"-->
+<!--        android:scaleType="centerCrop"-->
+<!--        tools:srcCompat="@tools:sample/avatars" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvDescription"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/ivPhoto"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginBottom="40dp"-->
+<!--        android:text="Description..."-->
+<!--        android:textSize="16sp"-->
+<!--        tools:layout_marginBottom="10dp" />-->
+
+<!--    &lt;!&ndash;<TextView-->
+<!--        android:id="@+id/tvId"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/tvDescription"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:text="ID" />&ndash;&gt;-->
+
+<!--</RelativeLayout>-->

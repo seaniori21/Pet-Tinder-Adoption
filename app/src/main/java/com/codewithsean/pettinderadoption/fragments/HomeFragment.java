@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -33,11 +34,13 @@ import okhttp3.Headers;
 public class HomeFragment extends Fragment {
 
     public static final String GET_PETS = "https://api.petfinder.com/v2/animals";
-    public static final String TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJ1NkFmQmJGWTZIdnJYR29HWkZHbjB2T3BHdmluckx3SzN3WWZSbFBGelpudTdsZFJPMCIsImp0aSI6IjA5NDdjZjVlMTM2MzA1NDk0ZGJiMmNkYjljNmQ4NzQwYjZhOTFlMWIxOTMxMWNhY2EwOTNhNmM3MjdlYTFjOGNlNjYwN2U1MDVhOTIzNGIyIiwiaWF0IjoxNjUxNjMwNTc4LCJuYmYiOjE2NTE2MzA1NzgsImV4cCI6MTY1MTYzNDE3OCwic3ViIjoiIiwic2NvcGVzIjpbXX0.K87pdSbyrHnJgLYmZXmO2OlSQZqjp8bswlImeoRXfCruqSw_mH3EPLQnBHAQ2C5pb2xp7Az4EL8qM-c3kCF-UkfnwyOZ34Q2Zgm85uQ-_omEqdxoSkScQW5mz5EZfGLXPSugW_T1OHykH-G1091G7qc9nTmkT77Zmh9vX2GNiGatwGHhm2Y2C3elVEQ89XyghcM3LIGONB9VWo6gErDStQaykqD_ICNGLJiUWLHOrNn4fUaQpaa9Lh17bwq0-svGZOCJ-aISQOAGGkDfDpAIaDkcJnxoqhNHONnezGq5k9Y4nMDtwGCzhIlf7OoNUDlugW8dGDSu_MfWlXEyL3EyWw";
+    public static final String TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJ1NkFmQmJGWTZIdnJYR29HWkZHbjB2T3BHdmluckx3SzN3WWZSbFBGelpudTdsZFJPMCIsImp0aSI6IjY3OTU1NTMxNGFkNzg3MTAwZDYxM2U4YWFlNzk4NDNlMDVmYzM1ZWZhYTc3ZTcwZDgwMjBiMjg3YjlmOTllNGE1MzFhYTcwNTYxMDdhNGUyIiwiaWF0IjoxNjUxNjM4NjU1LCJuYmYiOjE2NTE2Mzg2NTUsImV4cCI6MTY1MTY0MjI1NSwic3ViIjoiIiwic2NvcGVzIjpbXX0.BlKkIURjReeidh5uGWeFlUZpdLOSW8KoP6o6H3Q0n_U0xyGVekdj_zyjf2i7jkIvqTvd5TeGDjg2CBE-lLhpR_A37cvMzs186ZwWrd5OLSjlvcF6WHK8qd4HCrosslWkW2iP5xRn279yI9jQaWNG6EzyDBFZU9lRfgUOra7Pp5Wzy54zfgWpSufVluRrYkg7ylYQ-mq3Doi62I7bDe01YYn8gPfgv0Gn2_6JGY3hH3lMi8nwaQ_WZJkC5bvZvELbli8aEMu4EjYD4Jqlzf-Tx78Ez4qMTRswWHP1qr21_ufjyKKjzczWLnrXmh-dmE3qCvt68TvajZQIusNDpzdD8A";
     public static final String TAG = "HomeFragment";
     private RecyclerView rvMatch;
     List<Profile> profiles;
     protected ProfileAdapter profileAdapter;
+
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -51,6 +54,9 @@ public class HomeFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         rvMatch = view.findViewById(R.id.rvMatch);
+
+
+
 
         profiles = new ArrayList<>();
         //create an adapter
