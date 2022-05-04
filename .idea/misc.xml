@@ -15,7 +15,11 @@
         <entry key="..\:/Users/seani/AndroidStudioProjects/PetTinderAdoption/app/src/main/res/layout/activity_main.xml" value="0.10989583333333333" />
         <entry key="..\:/Users/seani/AndroidStudioProjects/PetTinderAdoption/app/src/main/res/layout/profile_page.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.17864583333333334" />
         <entry key="app/src/main/res/layout/activity_signup.xml" value="0.2125" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.17864583333333334" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.17864583333333334" />
+        <entry key="app/src/main/res/layout/profile_page.xml" value="0.17864583333333334" />
       </map>
     </option>
   </component>
