@@ -35,7 +35,7 @@ public class HomeFragment extends Fragment {
     public static final String GET_PETS = "https://api.petfinder.com/v2/animals";
     public static final String TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJ1NkFmQmJGWTZIdnJYR29HWkZHbjB2T3BHdmluckx3SzN3WWZSbFBGelpudTdsZFJPMCIsImp0aSI6IjA5NDdjZjVlMTM2MzA1NDk0ZGJiMmNkYjljNmQ4NzQwYjZhOTFlMWIxOTMxMWNhY2EwOTNhNmM3MjdlYTFjOGNlNjYwN2U1MDVhOTIzNGIyIiwiaWF0IjoxNjUxNjMwNTc4LCJuYmYiOjE2NTE2MzA1NzgsImV4cCI6MTY1MTYzNDE3OCwic3ViIjoiIiwic2NvcGVzIjpbXX0.K87pdSbyrHnJgLYmZXmO2OlSQZqjp8bswlImeoRXfCruqSw_mH3EPLQnBHAQ2C5pb2xp7Az4EL8qM-c3kCF-UkfnwyOZ34Q2Zgm85uQ-_omEqdxoSkScQW5mz5EZfGLXPSugW_T1OHykH-G1091G7qc9nTmkT77Zmh9vX2GNiGatwGHhm2Y2C3elVEQ89XyghcM3LIGONB9VWo6gErDStQaykqD_ICNGLJiUWLHOrNn4fUaQpaa9Lh17bwq0-svGZOCJ-aISQOAGGkDfDpAIaDkcJnxoqhNHONnezGq5k9Y4nMDtwGCzhIlf7OoNUDlugW8dGDSu_MfWlXEyL3EyWw";
     public static final String TAG = "HomeFragment";
-    private RecyclerView rvProfiles;
+    private RecyclerView rvMatch;
     List<Profile> profiles;
     protected ProfileAdapter profileAdapter;
 
@@ -50,7 +50,7 @@ public class HomeFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        rvProfiles = view.findViewById(R.id.rvProfiles);
+        rvMatch = view.findViewById(R.id.rvMatch);
 
         profiles = new ArrayList<>();
         //create an adapter
@@ -59,10 +59,10 @@ public class HomeFragment extends Fragment {
 
 
         //set the adapter to RV
-        rvProfiles.setAdapter(profileAdapter);
+        rvMatch.setAdapter(profileAdapter);
 
         //set layout manager to Rv
-        rvProfiles.setLayoutManager(new LinearLayoutManager(getContext()));
+        rvMatch.setLayoutManager(new LinearLayoutManager(getContext()));
 
         ProduceProfiles();
 
