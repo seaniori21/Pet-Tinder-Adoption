@@ -14,6 +14,7 @@ import androidx.fragment.app.FragmentManager;
 import com.codewithsean.pettinderadoption.fragments.HomeFragment;
 import com.codewithsean.pettinderadoption.fragments.ProfileFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.parse.ParseUser;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -63,7 +64,14 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_bottom_navigation, menu);
+        //menu.setGroupVisible(R.menu.menu_bottom_navigation, false);
+        getMenuInflater().inflate(R.menu.menu_profile, menu);
+        menu.findItem(R.id.btnLogOut).setVisible(false);
+//        menu.findItem(R.id.action_home).setVisible(false);
+//        menu.findItem(R.id.action_profile).setVisible(false);
+//        menu.findItem(R.id.action_chat).setVisible(false);
+
+        //menu.setGroupVisible(R.menu.menu_bottom_navigation, false);
         return true;
     }
 
@@ -72,4 +80,5 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
         finish();
     }
+
 }

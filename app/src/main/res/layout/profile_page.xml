@@ -1,64 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="550dp"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="600dp"
     android:layout_marginBottom="50dp"
+    android:background="#776E6E"
     android:orientation="vertical">
+
     <androidx.cardview.widget.CardView
-        android:orientation="vertical"
-        android:background="@color/white"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
         app:cardCornerRadius="7dp">
-
 
         <ImageView
             android:id="@+id/ivPhoto"
             android:layout_width="match_parent"
-            android:layout_height="479dp"
+            android:layout_height="500dp"
             android:layout_below="@+id/tvName"
+            android:background="#5C5555"
+            android:scaleType="centerCrop"
             tools:layout_editor_absoluteX="1dp"
             tools:layout_editor_absoluteY="1dp"
             tools:srcCompat="@tools:sample/avatars" />
 
-
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="bottom"
-            android:gravity="center|left|bottom"
-            android:orientation="vertical"
-            android:paddingLeft="20dp">
-
+            android:layout_height="80dp"
+            android:layout_marginTop="500dp"
+            android:background="#5C5555">
 
             <TextView
                 android:id="@+id/tvName"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:textSize="18dp"
+                android:layout_marginTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="24sp"
                 android:textStyle="bold"
                 tools:text="CUTE DOGGY" />
 
             <TextView
                 android:id="@+id/tvDescription"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/tvName"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="0dp"
                 android:text="Description..."
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="12dp"
                 android:textStyle="normal" />
 
+        </RelativeLayout>
+        <!--            android:layout_height="479dp"-->
+        <!--            android:layout_marginTop="0dp"-->
+        <!--            android:layout_marginBottom="0dp"-->
+        <!--            android:scaleType="centerCrop"-->
+        <!--            tools:srcCompat="@tools:sample/avatars" />-->
 
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>>
+
+    </androidx.cardview.widget.CardView>
 </FrameLayout>
 
 
 
 
 
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="720dp"-->
+<!--    android:paddingTop="3dp">-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvName"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:fontFamily="sans-serif-condensed-medium"-->
+<!--        android:textSize="34sp"-->
+<!--        tools:text="CUTE DOGGY" />-->
+
+<!--    &lt;!&ndash;<TextView-->
+<!--        android:id="@+id/tvGender"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:textSize="20sp"-->
+<!--        tools:text="Gender" />&ndash;&gt;&ndash;&gt;-->
+
+
+<!--    <ImageView-->
+<!--        android:id="@+id/ivPhoto"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="600dp"-->
+<!--        android:layout_below="@+id/tvName"-->
+<!--        android:layout_marginTop="0dp"-->
+<!--        android:layout_marginBottom="0dp"-->
+<!--        android:scaleType="centerCrop"-->
+<!--        tools:srcCompat="@tools:sample/avatars" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvDescription"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/ivPhoto"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginBottom="40dp"-->
+<!--        android:text="Description..."-->
+<!--        android:textSize="16sp"-->
+<!--        tools:layout_marginBottom="10dp" />-->
+
+<!--    &lt;!&ndash;<TextView-->
+<!--        android:id="@+id/tvId"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/tvDescription"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:text="ID" />&ndash;&gt;-->
+
+<!--</RelativeLayout>-->

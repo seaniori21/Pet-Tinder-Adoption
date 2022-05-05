@@ -28,6 +28,7 @@ public class Profile {
         name = jsonObject.getString("name");
         gender = jsonObject.getString("gender");
         description = jsonObject.getString("description");
+        age = jsonObject.getString("age");
 
         //photo = new Photos();
 
@@ -35,7 +36,7 @@ public class Profile {
 
         if(temp.equals("[]")){
             this.photo = new Photos();
-            this.photo.full = "https://image.tmdb.org/t/p/w780/iPhDToxFzREctUA0ZQiYZamXsMy.jpg";
+            this.photo.full = "https://image.tmdb.org/t/p/w500/qsdjk9oAKSQMWs0Vt5Pyfh6O4GZ.jpg";
         }
         else {
             this.photo = new Photos();
