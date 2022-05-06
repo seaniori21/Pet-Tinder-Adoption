@@ -7,8 +7,9 @@
     android:layout_height="match_parent">
 
     <RelativeLayout
+        android:id="@+id/detail_RelativeLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/detail_PetImage"
@@ -26,9 +27,43 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/detail_PetImage"
             android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-condensed-medium"
             android:text="name"
             android:textAlignment="center"
-            android:textSize="24sp" />
+            android:textSize="34sp" />
     </RelativeLayout>
+
+    <TextView
+        android:id="@+id/detail_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail_RelativeLayout"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/outside_borderline"
+        android:fontFamily="sans-serif-light"
+        android:text="age"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/detail_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail_age"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/outside_borderline"
+        android:fontFamily="sans-serif-light"
+        android:textSize="16sp"
+        tools:text="description" />
+
+    <TextView
+        android:id="@+id/detail_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail_description"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/outside_borderline"
+        android:fontFamily="sans-serif-light"
+        android:textSize="16sp"
+        tools:text="gender" />
 
 </RelativeLayout>

@@ -5,10 +5,12 @@ import android.util.Log;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.parceler.Parcel;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Parcel
 public class Profile {
     public String id;
 
@@ -22,6 +24,7 @@ public class Profile {
     public String description;
     public Photos photo;
 
+    //required by parcel
     public  Profile(){};
 
     public Profile(JSONObject jsonObject) throws JSONException {
