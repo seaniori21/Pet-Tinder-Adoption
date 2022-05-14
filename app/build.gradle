@@ -52,6 +52,8 @@ dependencies {
 
     // for stackcard
     implementation 'com.lorentzos.swipecards:library:1.0.9@aar'
+    //swipecard dependency
+    implementation 'com.lorentzos.swipecards:library:1.0.9'
 
 
 
