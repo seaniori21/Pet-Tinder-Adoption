@@ -58,12 +58,6 @@
                 android:textStyle="normal" />
 
         </RelativeLayout>
-        <!--            android:layout_height="479dp"-->
-        <!--            android:layout_marginTop="0dp"-->
-        <!--            android:layout_marginBottom="0dp"-->
-        <!--            android:scaleType="centerCrop"-->
-        <!--            tools:srcCompat="@tools:sample/avatars" />-->
-
 
     </androidx.cardview.widget.CardView>
 </FrameLayout>
