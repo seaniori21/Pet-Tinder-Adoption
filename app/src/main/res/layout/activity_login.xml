@@ -68,7 +68,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_above="@+id/icons"
-        android:text="Or sign up with" />
+        android:text="Or sign in with" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -95,65 +95,6 @@
             android:layout_height="48dp"
             android:layout_margin="20dp"
             android:src="@drawable/fb_logo"/>
-
-
-
     </LinearLayout>
-
-
-
-
 </RelativeLayout>
-<!--<LinearLayout-->
-<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
-<!--    xmlns:tools="http://schemas.android.com/tools"-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="wrap_content"-->
-<!--    android:layout_gravity="center"-->
-<!--    android:layout_margin="16dp"-->
-<!--    android:orientation="vertical"-->
-<!--    tools:context=".LoginActivity"-->
-<!--    tools:visibility="visible">-->
 
-<!--    <ImageView-->
-<!--        android:id="@+id/appLogo"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="82dp"-->
-<!--        android:src="@drawable/app_logo" />-->
-
-
-<!--    <EditText-->
-<!--        android:id="@+id/etUsername"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_weight="1"-->
-<!--        android:ems="10"-->
-<!--        android:hint="Username" />-->
-
-<!--    <EditText-->
-<!--        android:id="@+id/etPassword"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_weight="1"-->
-<!--        android:ems="10"-->
-<!--        android:hint="Password"-->
-<!--        android:inputType="textPassword" />-->
-
-<!--    <Button-->
-<!--        android:id="@+id/btnSignUp"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_weight="1"-->
-<!--        android:backgroundTint="#27ACE7"-->
-<!--        android:text="Sign Up" />-->
-
-<!--    <Button-->
-<!--        android:id="@+id/btnLogin"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_weight="1"-->
-<!--        android:backgroundTint="#10BA46"-->
-<!--        android:text="Login" />-->
-
-<!--</LinearLayout>-->
