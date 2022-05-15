@@ -16,18 +16,22 @@
         <entry key="..\:/Users/seani/AndroidStudioProjects/PetTinderAdoption/app/src/main/res/layout/profile_page.xml" value="0.2" />
         <entry key="app/src/main/res/drawable/bg_round.xml" value="0.1775" />
         <entry key="app/src/main/res/drawable/dark_blue_bg.xml" value="0.1505" />
+        <entry key="app/src/main/res/drawable/day_bg.xml" value="0.1775" />
+        <entry key="app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1895" />
+        <entry key="app/src/main/res/drawable/ic_baseline_perm_identity_24.xml" value="0.1895" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1835" />
         <entry key="app/src/main/res/drawable/ic_launcher_profile_image_backup.xml" value="0.1835" />
         <entry key="app/src/main/res/layout/activity_create_new_user.xml" value="0.1796875" />
         <entry key="app/src/main/res/layout/activity_detail.xml" value="0.21666666666666667" />
         <entry key="app/src/main/res/layout/activity_email.xml" value="0.16875" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.17864583333333334" />
         <entry key="app/src/main/res/layout/activity_signup.xml" value="0.2125" />
         <entry key="app/src/main/res/layout/emailing_component.xml" value="0.16875" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.17864583333333334" />
         <entry key="app/src/main/res/layout/profile_page.xml" value="0.25" />
+        <entry key="app/src/main/res/menu/menu_bottom_navigation.xml" value="0.16875" />
       </map>
     </option>
   </component>
