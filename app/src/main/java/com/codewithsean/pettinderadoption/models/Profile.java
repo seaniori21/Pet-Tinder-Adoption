@@ -24,8 +24,8 @@ public class Profile {
     public String description;
     public Photos photo;
     public String contact;
-    public String tags;
     public String size;
+    public String attributes;
 
 
     //required by parcel
@@ -36,10 +36,9 @@ public class Profile {
         gender = jsonObject.getString("gender");
         description = jsonObject.getString("description");
         age = jsonObject.getString("age");
-        tags = jsonObject.getString("tags");
         contact = jsonObject.getString("contact");
         size = jsonObject.getString("size");
-
+        attributes = jsonObject.getString("attributes");
 
 
         //photo = new Photos();
