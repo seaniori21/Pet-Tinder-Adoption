@@ -10,7 +10,7 @@ curl -d "grant_type=client_credentials&client_id=u6AfBbFY6HvrXGoGZFGn0vOpGvinrLw
 (NOTE: you can find this in the `HomeFragment.java`)
 With the token value you receive, go to `HomeFragment.java` and replace the information inside 
 `public static final String TOKEN = "...";`
-⚠
+
 
 
 ## Overview
