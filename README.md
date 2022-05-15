@@ -1,6 +1,6 @@
 # Pet-Tinder-Adoption
 
-!! PLEASE READ THE FOLLOWING: 
+⚠️ PLEASE READ THE FOLLOWING: 
 To run this project, the API token needs to be replaced. Please run the following into the terminal:
 
 ```
