@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="600dp"
     android:layout_marginBottom="50dp"
-    android:background="#776E6E"
+    android:background="#B8D0FF"
     android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
@@ -32,14 +32,17 @@
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:layout_marginTop="500dp"
-            android:background="#5C5555">
+            android:background="#e2c6ff">
 
             <TextView
                 android:id="@+id/tvName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="0dp"
-                android:textColor="@color/white"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:scaleType="centerCrop"
+                android:textColor="@color/black"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 tools:text="CUTE DOGGY" />
@@ -50,10 +53,12 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tvName"
                 android:layout_alignParentBottom="true"
+                android:layout_marginLeft="7dp"
                 android:layout_marginTop="2dp"
-                android:layout_marginBottom="0dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="5dp"
                 android:text="Description..."
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="12dp"
                 android:textStyle="normal" />
 

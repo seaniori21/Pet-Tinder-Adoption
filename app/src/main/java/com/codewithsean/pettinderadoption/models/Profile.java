@@ -23,6 +23,10 @@ public class Profile {
     public String gender;
     public String description;
     public Photos photo;
+    public String contact;
+    public String tags;
+    public String size;
+
 
     //required by parcel
     public  Profile(){};
@@ -32,6 +36,11 @@ public class Profile {
         gender = jsonObject.getString("gender");
         description = jsonObject.getString("description");
         age = jsonObject.getString("age");
+        tags = jsonObject.getString("tags");
+        contact = jsonObject.getString("contact");
+        size = jsonObject.getString("size");
+
+
 
         //photo = new Photos();
 
