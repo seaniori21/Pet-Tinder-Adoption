@@ -70,7 +70,9 @@ public class DetailActivity extends AppCompatActivity {
     }
 
     private void goAdoptMeActivity() {
-//        Intent i = new Intent(this, )
+        Intent i = new Intent(this, EmailActivity.class);
+        startActivity(i);
+        finish();
     }
 
 }
