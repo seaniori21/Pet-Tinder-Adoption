@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="0dp"
+    android:layout_marginTop="0dp"
+    android:layout_marginEnd="0dp"
+    android:background="#00E1FF"
+    android:backgroundTint="#3C1FB6">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/etDescription"-->
+    <!--        android:layout_width="407dp"-->
+    <!--        android:layout_height="109dp"-->
+    <!--        android:layout_alignParentStart="true"-->
+    <!--        android:layout_alignParentEnd="true"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_marginStart="0dp"-->
+    <!--        android:layout_marginEnd="4dp"-->
+    <!--        android:layout_marginBottom="283dp"-->
+    <!--        android:ems="10"-->
+    <!--        android:hint="Description"-->
+    <!--        android:inputType="textPersonName"-->
+    <!--        android:minHeight="48dp" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btnTakePic"-->
+    <!--        android:layout_width="220dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentStart="true"-->
+    <!--        android:layout_alignParentTop="true"-->
+    <!--        android:layout_alignParentEnd="true"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginStart="97dp"-->
+    <!--        android:layout_marginTop="209dp"-->
+    <!--        android:layout_marginEnd="94dp"-->
+    <!--        android:text="Take Picture" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btnLogout"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentTop="true"-->
+    <!--        android:layout_marginTop="376dp"-->
+    <!--        android:text="LOGOUT" />-->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8C8484"
+        android:backgroundTint="#3A65CF">
+
+        <ImageView
+            android:id="@+id/pfpUserImage"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#6C6262"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/pfpUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="238dp"
+            android:layout_marginEnd="2dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="SEAN UMALI"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            tools:text="SEAN UMALI" />
+    </RelativeLayout>
+    <!--            android:background="@drawable/outside_borderline"-->
+    <TextView
+        android:id="@+id/pfpEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/outside_borderline"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        tools:text=" example@gmail.com" />
+
+    <TextView
+        android:id="@+id/pfpPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pfpEmail"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/outside_borderline"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        tools:text="Phone Number" />
+
+    <TextView
+        android:id="@+id/pfpBirthday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pfpPhoneNumber"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/outside_borderline"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        tools:text="Birthday" />
+
+    <TextView
+        android:id="@+id/pfpInterests"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pfpBirthday"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/outside_borderline"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        tools:text="Interests" />
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/pfpPhoneEmail"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@+id/pfpInterests"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        android:background="@drawable/outside_borderline"-->
+    <!--        android:fontFamily="sans-serif-light"-->
+    <!--        android:textSize="16sp"-->
+    <!--        tools:text="Birthday" />-->
+
+
+</RelativeLayout>
