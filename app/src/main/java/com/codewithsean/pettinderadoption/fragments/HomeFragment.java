@@ -33,10 +33,7 @@ import okhttp3.Headers;
 public class HomeFragment extends Fragment {
 
     public static final String GET_PETS = "https://api.petfinder.com/v2/animals";
-    public static final String TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJ1NkFmQmJGWTZIdnJYR29HWkZHbjB2T3BHdmluckx3SzN3WWZSbFBGelpudTdsZFJPMCIsImp0aSI6I" +
-            "jg4ZjI3MDMwNGJkZTFiOTY5NTE4MzA1MTdlYWM1YzgzZDY2YzRjZjUzY2U1OGE2NTNjYjJhYzhkYjI0NDk0OTk0NzM2OTI4MjQ2OGJjNzMwIiwiaWF0IjoxNjUyNzUyNjc1LCJuYmYiOjE2NTI3NTI2NzUsImV4cCI6MTY1Mjc1NjI3NSwic3Vi" +
-            "IjoiIiwic2NvcGVzIjpbXX0.rbVDfEYDr5jvYSEad2S4l6IxBdIzL-CdhSrI_CebPnkd_Zc81QgcELsIp8aY9J6AJLLXf5Gaqz79FHL9hYw1QQ69kTal352yBPlrKBsVVdTFtLSOvJlZWCCSa4P33JcfXMAYzB_EAsZNbN8iRS2DpJ-WZocKQVi" +
-            "lsedB2jfnp3gkc5l_-8yqPhGQajtfkEqtgoKEkW9FzHxnlGfvgagXXSxpPq-P29jE3BEpONQttAq6OohaFfpJfaOh46n3_R1dAJM_wOS5c4NOBy_K5xMPsZjRIrvyfKtIoJMqZwD_qV4iRPzkEjLDobfxftpxwM5k9ZRSY2nz-waWGyuig9awzg";
+    public static final String TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJ1NkFmQmJGWTZIdnJYR29HWkZHbjB2T3BHdmluckx3SzN3WWZSbFBGelpudTdsZFJPMCIsImp0aSI6IjVjZjkxMTcwNjFhODc4NGJhY2U1ZGQyYTYwNDAwZWY1NzczNjg4NWRiOGM0NzMzMjYyODY0MmU2NDMyMjkwZjMyNDllNWJiZTE3MWE2ZDA1IiwiaWF0IjoxNjUzMTU0NDI5LCJuYmYiOjE2NTMxNTQ0MjksImV4cCI6MTY1MzE1ODAyOSwic3ViIjoiIiwic2NvcGVzIjpbXX0.GBcgt0dq7PVodV5Uf0JelZdqfDABVmdMRE5-KzpZyBYStsSpc9keCzRod3IlH830YCel7ikThXBYqzf8Ehsj1pcfNK5Ynhbb_ij7WKtUs7WIgQjl5mG0uJpSLiZWrxb8FbM2LGmh27iicZ95JgnABB6LQB_8_kBYYQZfySBb4Sq5kbCNAW78FjPukW0uiID9BGkf_RyyR3oSqPu2HM24gMukYDL4RVqT-QmsxYJSAVcJP7pdv397eNm9Zz80Ou-SedTAdPvNXnnS7qefWnWc0fm-ScKtR3XYA-hevtPcL_ZiXv7RK4dl-uZkVnY3UFUYD74fXt0G0vuAPJpNCo84eA";
     public static final String TAG = "HomeFragment";
     private RecyclerView rvProfiles;
     List<Profile> profiles;
