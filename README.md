@@ -16,46 +16,16 @@ An app that allows users to adopt animals through a Tinder-like interface
     Entertainment
 - **Mobile:**
     
-- **Story:**
-    resolve those issues! 
-
 - **Market:**
-    
-- **Habit:**
-    
-- **Scope:**
-    
-    
-## Product Spec
+    Made for people who want to adopt adorable pets in the comfort of their homes    
 
-### 1. Features / What our app does
-*
-*
-### 2. Screen Archetypes
+   
 
-* [list first screen here]
-   *
-   * ...
-* [list second screen here]
-   * [list associated required story here]
-   * ...
+### Features / What our app does
+*   Allows users to make an account 
+*   Users are able to scroll through a feed of pets that are viable for adoption
+*   Choosing to adopt will send the user to their email, to connect with the pet shelter
 
-### 3. Navigation
-
-**Tab Navigation** (Tab to Screen)
-
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
-
-**Flow Navigation** (Screen to Screen)
-
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
 
 ## Wireframes
 
