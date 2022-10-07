@@ -1,5 +1,6 @@
 # Pet-Tinder-Adoption
-An app that allows users to adopt animals through a Tinder-like interface
+**An app that allows users to adopt animals through a Tinder-like interface**
+
 
 ## Table of Contents
 1. [Overview](#Overview)
